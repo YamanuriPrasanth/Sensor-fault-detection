@@ -32,11 +32,11 @@ Before we run the project, make sure that you are having MongoDB in your local s
 ![image](https://user-images.githubusercontent.com/57321948/193536736-5ccff349-d1fb-486e-b920-02ad7974d089.png)
 
 
-## Project Archietecture
+## Project Architecture
 ![image](https://user-images.githubusercontent.com/57321948/193536768-ae704adc-32d9-4c6c-b234-79c152f756c5.png)
 
 
-## Deployment Archietecture
+## Deployment Architecture
 ![image](https://user-images.githubusercontent.com/57321948/193536973-4530fe7d-5509-4609-bfd2-cd702fc82423.png)
 
 
@@ -48,7 +48,7 @@ git clone https://github.com/sethusaim/Sensor-Fault-Detection.git
 ### Step 2- Create a conda environment after opening the repository
 
 ```bash
-conda create -n sensor python=3.7.6 -y
+conda create -n sensor python=3.8.0 -y
 ```
 
 ```bash
@@ -68,7 +68,6 @@ export AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY>
 
 export AWS_DEFAULT_REGION=<AWS_DEFAULT_REGION>
 
-export MONGODB_URL="mongodb+srv://<username>:<password>@ineuron-ai-projects.7eh1w4s.mongodb.net/?retryWrites=true&w=majority"
 
 ```
 
@@ -104,22 +103,7 @@ docker build --build-arg AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> --build-arg AWS_S
 docker run -d -p 8080:8080 <IMAGE_NAME>
 ```
 
-To run the project  first execute the below commmand.
-MONGO DB URL: 
-```
-mongodb+srv://avnish:XglZZ9OkjjUw74pZ@ineuron-ai-projects.7eh1w4s.mongodb.net/admin?authSource=admin&replicaSet=atlas-okvkrd-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
-```
-windows user
 
-```
-MONGO_DB_URL=mongodb+srv://avnish:XglZZ9OkjjUw74pZ@ineuron-ai-projects.7eh1w4s.mongodb.net/admin?authSource=admin&replicaSet=atlas-okvkrd-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
-```
-
-Linux user
-
-```
-export MONGO_DB_URL=mongodb+srv://avnish:XglZZ9OkjjUw74pZ@ineuron-ai-projects.7eh1w4s.mongodb.net/admin?authSource=admin&replicaSet=atlas-okvkrd-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true
-```
 
 then run 
 ```
