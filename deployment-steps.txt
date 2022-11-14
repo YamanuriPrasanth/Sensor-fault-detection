@@ -33,6 +33,9 @@
 	
 5. EC2 machine  Ubuntu  Created
 
+t2.small
+16GB volume
+
 6. Open EC2 and Install docker in EC2 Machine 
 	
 	
